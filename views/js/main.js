@@ -511,7 +511,7 @@ function updatePositions() {
 
   var items = document.querySelectorAll('.mover');
   //console.log("=======New call to updatePosition====");
-  var scroll = document.body.scrollTop;
+  var selector = document.body.scrollTop;
 
   for (var i = 0; i < items.length; i++) {
     //console.log("----");
@@ -519,7 +519,7 @@ function updatePositions() {
     //console.log("i % 5 = " + (i % 5));
     //console.log("document.body.scrollTop = " + document.body.scrollTop);
     //WITH THE CONSOLE.LOG I KEPT GETTING 0 THRU 4..WILL LOOK INTO A ARRAY
-    var phase = Math.sin((scroll/ 1250) + (i % 5));
+    var phase = Math.sin((selector/ 1250) + (i % 5));
     //console.log("phase = " + phase);
     items[i].style.left = items[i].basicLeft + 100 * phase + 'px';
   }
