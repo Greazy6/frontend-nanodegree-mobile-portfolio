@@ -456,7 +456,7 @@ var resizePizzas = function(size) {
 
   // Iterates through pizza elements on the page and changes their widths
   function changePizzaSizes(size) {
-    for (var i = 0; i < pizzaContainerLenght; i++) {
+    for (var i = 0; i < pizzaContainerLength; i++) {
       //var dx = determineDx(document.getElementsByClassName(".randomPizzaContainer")[i], size);
       //var newwidth = (document.getElementsByClassName(".randomPizzaContainer")[i].offsetWidth + dx) + 'px';
       pizzaContainers[i].style.width = newwidth;
@@ -510,13 +510,14 @@ function updatePositions() {
 
   var items = document.querySelectorAll('.mover');
   //console.log("=======New call to updatePosition====");
-  var scroll = document.body.scrolltop;
+  var scroll = document.body.scrollTop;
 
   for (var i = 0; i < items.length; i++) {
     //console.log("----");
     //console.log("i = " + i);
     //console.log("i % 5 = " + (i % 5));
     //console.log("document.body.scrollTop = " + document.body.scrollTop);
+    //WITH THE CONSOLE.LOG I KEPT GETTING 0 THRU 4..WILL LOOK INTO A ARRAY
     var phase = Math.sin((scroll/ 1250) + (i % 5));
     //console.log("phase = " + phase);
     items[i].style.left = items[i].basicLeft + 100 * phase + 'px';
