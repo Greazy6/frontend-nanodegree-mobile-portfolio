@@ -8,7 +8,25 @@ My link so you can review it is http://greazy6.github.io/frontend-nanodegree-mob
 
 And if you would like you can check it at https://developers.google.com/speed/pagespeed/insights/
 
-Well lets get to the changes I minfied css, minifed pictures, I added a script for my index page, added async on every jscript i could find, and I adjusted two for loops in the main.js page.
+Well lets get to the changes!
+
+On th index.html pages first I async all the js script tags, because that was easy.
+
+I also minified all css and all pictures.
+
+On the google fonts i didnt know what to do until i realized this was coming from Google.
+
+And found out they provided a script I could use to replace the link that was provided.
+
+The final part was getting the FPS up on the main.js.
+
+The easiest part was to reduce the pizzas i took that for loop down to 35.
+
+The hardest part was trying to modify the for loops at one point in my testing the pizzas actually stopped moving in the screen.
+
+It was basically trial and error.
+
+I changed queryselectorall to getelementbyclass to speed things up.
 
 This was all hard because.......I have never done it before.
 
