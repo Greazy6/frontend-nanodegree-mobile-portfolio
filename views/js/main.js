@@ -448,7 +448,7 @@ var resizePizzas = function(size) {
     return dx;
   }
 
-
+//I pulled of this stuff out becauseit was slowing everything down
   var pizzaContainers = document.querySelectorAll(".randomPizzaContainer");
   var dx = determineDx(pizzaContainers[0], size);
   var newwidth = (pizzaContainers[0].offsetWidth + dx) + 'px';
@@ -512,7 +512,7 @@ function updatePositions() {
   var items = document.querySelectorAll('.mover');
   //console.log("=======New call to updatePosition====");
   var selector = document.body.scrollTop;
-
+//as you can see i was testing and di it quite i bit i noticed 0 thru 4 was repeated and phase stayed the same
   for (var i = 0; i < items.length; i++) {
     //console.log("----");
     //console.log("i = " + i);
