@@ -514,7 +514,7 @@ function updatePositions() {
   frame++;
   window.performance.mark("mark_start_frame");
 
-  var items = document.getElementsByClassName('.mover');
+  var items = document.querySelectorAll('.mover');
   //console.log("=======New call to updatePosition====");
   var selector = document.body.scrollTop;
 //as you can see i was testing and di it quite i bit i noticed 0 thru 4 was repeated and phase stayed the same
