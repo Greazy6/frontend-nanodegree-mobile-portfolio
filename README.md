@@ -1,5 +1,26 @@
 ## Website Performance Optimization portfolio project
 
+Hey eveyboby this is my optimization project
+
+Below is a bunch of stuff from udacity its importand and helpful, but lets get to the changes.
+
+My link so you can review it is http://greazy6.github.io/frontend-nanodegree-mobile-portfolio/
+
+And if you would like you can check it at https://developers.google.com/speed/pagespeed/insights/
+
+Well lets get to the changes I minfied css, minifed pictures, I added a script for my index page, added async on every jscript i could find, and I adjusted two for loops in the main.js page.
+
+This was all hard because.......I have never done it before.
+
+If your feeling sketical you can check it for your self with the devleoper tools in your browser.
+
+
+
+
+
+
+
+
 Your challenge, if you wish to accept it (and we sure hope you will), is to optimize this online portfolio for speed! In particular, optimize the critical rendering path and make this page render as quickly as possible by applying the techniques you've picked up in the [Critical Rendering Path course](https://www.udacity.com/course/ud884).
 
 To get started, check out the repository, inspect the code,
