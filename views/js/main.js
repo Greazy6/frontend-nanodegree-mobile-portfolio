@@ -449,13 +449,18 @@ var resizePizzas = function(size) {
   }
 
 //I pulled of this stuff out becauseit was slowing everything down
-  var pizzaContainers = document.getElementsByClassName(".randomPizzaContainer");
+ // var pizzaContainers = document.getElementsByClassName(".randomPizzaContainer");
+  //var dx = determineDx(pizzaContainers[0], size);
+  //var newwidth = (pizzaContainers[0].offsetWidth + dx) + 'px';
+ // var pizzaContainerLength = pizzaContainers.length;
+
+  // Iterates through pizza elements on the page and changes their widths
+  function changePizzaSizes(size) {
+    var pizzaContainers = document.getElementsByClassName(".randomPizzaContainer");
   var dx = determineDx(pizzaContainers[0], size);
   var newwidth = (pizzaContainers[0].offsetWidth + dx) + 'px';
   var pizzaContainerLength = pizzaContainers.length;
 
-  // Iterates through pizza elements on the page and changes their widths
-  function changePizzaSizes(size) {
     for (var i = 0; i < pizzaContainerLength; i++) {
       //var dx = determineDx(document.getElementsByClassName(".randomPizzaContainer")[i], size);
       //var newwidth = (document.getElementsByClassName(".randomPizzaContainer")[i].offsetWidth + dx) + 'px';
